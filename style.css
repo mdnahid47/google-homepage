@@ -27,7 +27,7 @@ section header ul{
 }
 section header ul li{
     list-style: none;
-   margin-left: 20px;
+    margin-left: 20px;
 }
 section header ul li a{
     color: #111;
@@ -40,6 +40,7 @@ section header ul li button{
     outline: none;
     padding: 8px 14px;
     color: #fff;
+    font-size: 14px;
     font-weight: bold;
     border-radius: 3px;
     cursor: pointer;
@@ -65,14 +66,14 @@ section .main .searchbox .search{
     outline: none;
     font-size: 16px;
 }
-section .main .searchbox .search .icons{
+section .main .searchbox .icons{
     position: absolute;
     top: 0;
     width: 100%;
     display: flex;
     padding: 12px 30px;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     pointer-events: none;
 }
 section .main .buttons{
@@ -119,4 +120,34 @@ section .footer .row ul li a{
     margin-right: 25px;
 }
 
+
+/*Desktop*/
+@media (min-width:1024px){
+
+}
+
+/*Tablet View*/
+@media (min-width:769px) and (max-width:1023px){
+    section header ul li button{
+        background-color: tomato;
+    }
+}
+
+
+
+/*Mobile View*/
+@media (max-width:768px){
+    section .main .searchbox .search{
+        width: 78%;
+    }
+    section .main .searchbox .icons{
+        width: 84%;
+    }
+    section .footer .row ul{
+        display: block;
+    }
+    section header ul li button{
+        background-color: blue;
+    }
+}
 
